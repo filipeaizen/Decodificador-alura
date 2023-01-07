@@ -1,0 +1,103 @@
+:root{
+    --corprincipal:rgb(246, 244, 244);
+    --corsecundaria:white;
+    --cordetalhes:blue;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: var(--corprincipal);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.container-input{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+#input-txt{
+    width: 680px;
+    height: 508px;
+    resize: none;
+    outline: none;
+    border: none;
+    background: var(--corprincipal);
+    color: #0A3871;
+    font-size: 32px;
+}
+#input-txt::placeholder{
+    color: #0A3871;
+    font-size: 32px;
+    line-height: 42px;
+}
+.output{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 744px;
+    box-shadow: 0 24px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 5%;
+    align-items: center;
+    text-align: center;
+    background: var(--corsecundaria);
+    
+}
+#output-txt{
+    display: none;
+    width:350px ;
+    height: 600px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    font-size: 32px;
+    color: #0A3871;
+    resize: none;
+}
+h2 , .input-txt{
+    font-size: 28px;
+    padding: 5px 32px;
+}
+span{
+    font-size: 16px;
+    padding: 5px 32px;
+}
+.button{
+    width: 100%;
+}
+.btn-criptografar,.btn-descriptografar, .btn-copiar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: none;
+    text-transform: uppercase;
+}
+.btn-criptografar,.btn-copiar{
+    color: white;
+    background: #0A3871;
+}
+.btn-descriptografar{
+    color: #0A3871;
+    background: #D8DFE8;
+    margin-left: 20px;
+    
+}
+.txt{
+    background-image:url(/svg/exclamacao.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 32px;
+    padding-bottom: 10px;
+}
