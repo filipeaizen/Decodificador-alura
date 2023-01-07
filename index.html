@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt -br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main-container">
+        <header class="cabecalho">
+            <img src="/svg/Vector.png" alt="">
+        </header><!--cabecalho-->
+
+
+            <section class="container">
+                <div class="container-input">
+                    <div class="input">
+                        <textarea id="input-txt" placeholder="Digite seu texto aqui..."></textarea>
+                        <div class="button">
+                                <div class="txt">
+                            
+                                    <p>Apenas letras minusculas.</p>
+                                </div>
+
+                            <div class="button-btn">
+                                <button class="btn-criptografar" onclick="criptografar()">Criptografar</button>
+                                <button class="btn-descriptografar" onclick="descriptografar()">Descriptografar</button>
+                            </div><!--button-btn-->
+                        </div><!--button-->
+                    </div><!--input-->
+                </div><!--container-input-->
+        
+                <div class="output">
+                    <img src="/svg/High quality products 1 1.svg" alt="" id="imgInfo">
+                    <textarea id="output-txt" placeholder="Nenhuma mensagem encontrada"></textarea>
+                    <span id="msgInfo">Digite um texto que deseja criptografar ou descriptografar </span>
+                    <button class="btn-copiar" onclick="copiar()">Copiar</button>
+                </div><!--output-->
+            </section> <!--container-->
+
+            
+
+
+    </main> <!--main-container-->
+
+    <footer class=" rodape">
+        <div class="icons">
+            <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href=""><ion-icon name="logo-github"></ion-icon></a>
+        </div><!--icons-->
+    </footer><!--rodape-->
+
+    <script src="/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
