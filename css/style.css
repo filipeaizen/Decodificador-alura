@@ -96,7 +96,7 @@ span{
     cursor: pointer;
 }
 .txt{
-    background-image:url(/svg/exclamacao.png);
+    background-image:url(svg/exclamacao.png);
     background-repeat: no-repeat;
     background-position: 10px;
     padding-left: 32px;
