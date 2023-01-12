@@ -1,5 +1,5 @@
-var textInput = document.querySelector("#input-txt");
-var textOutput = document.querySelector("#output-txt");
+
+
 
 function mostraRestultado(msg){
     var textarea = document.getElementById('output-txt');
@@ -12,6 +12,7 @@ function mostraRestultado(msg){
 }
 
 function criptografar(){
+    var textInput = document.querySelector("#input-txt");
     var textoDigitado = textInput.value;
     var resultCriptografar = '';
     for(var i = 0; i < textoDigitado.length; i++){
@@ -34,6 +35,8 @@ function criptografar(){
 }
 
 function descriptografar(){
+    var textInput = document.querySelector("#input-txt");
+    var textOutput = document.querySelector("#output-txt");
     var textoDigitado = textInput.value;
     var resultDesincriptografar = textoDigitado.replace(/enter/g, "e").replace(/ai/g, "a").replace(/imes/g, "i").replace(/ober/g, "o").replace(/ufat/g, "u");
     mostraRestultado(resultDesincriptografar);
