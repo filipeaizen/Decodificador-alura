@@ -1,6 +1,4 @@
-
-
-
+var textOutput = document.querySelector("#output-txt");
 function mostraRestultado(msg){
     var textarea = document.getElementById('output-txt');
     var imgInfo = document.getElementById('imgInfo');
@@ -36,7 +34,6 @@ function criptografar(){
 
 function descriptografar(){
     var textInput = document.querySelector("#input-txt");
-    var textOutput = document.querySelector("#output-txt");
     var textoDigitado = textInput.value;
     var resultDesincriptografar = textoDigitado.replace(/enter/g, "e").replace(/ai/g, "a").replace(/imes/g, "i").replace(/ober/g, "o").replace(/ufat/g, "u");
     mostraRestultado(resultDesincriptografar);
